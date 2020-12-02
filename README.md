@@ -1,9 +1,12 @@
 # functionGenerator
-1)Download the ZIP \n 
-2)Open main.cpp \n
-3)Press run and follow the cout instructions. \n
+1)Download the ZIP 
 
-Example: \n \n 
+2)Open main.cpp 
 
-1 2 3 4 \n
-5 6 7 8 \n
+3)Press run and follow the cout instructions. 
+
+Example: 
+
+1 2 3 4 
+
+5 6 7 8 
