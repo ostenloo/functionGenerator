@@ -90,7 +90,6 @@ void findPolynomial(vector<double> domain, vector<double> codomain, int size)
             if(i == j)
                 continue;
             temp /= (domain[i] - domain[j]); //4 / (1-2)(1-3)
-//            cout << "temp after dividing by other factors" << temp << endl;
         }
         coefficients[0] += temp;
         for(int j = 1; j < size; j++)
@@ -129,6 +128,7 @@ void findPolynomial(vector<double> domain, vector<double> codomain, int size)
     }
 }
 
+//bitmasking 
 vector<vector<int>> binary(int size)
 {
     vector<vector<int>> ans;
