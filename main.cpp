@@ -84,26 +84,24 @@ void findPolynomial(vector<double> domain, vector<double> codomain, int size)
     for(int i = 0; i < size; i++)
     {
         //this loop traverses each number in the codomain
-        temp = codomain[i]; //4
+        temp = codomain[i]; 
         for(int j = 0; j < size; j++)
         {
             if(i == j)
                 continue;
-            temp /= (domain[i] - domain[j]); //4 / (1-2)(1-3)
+            temp /= (domain[i] - domain[j]); 
         }
         coefficients[0] += temp;
         for(int j = 1; j < size; j++)
         {
             //transverse the binary vector to get the vieta formulas for each power of x
             sum = 0;
-            //cout << "j " << j << endl;
             for (int k = 1; k < zer.size(); k++) {
-                if(zer[k] == size - j - 1) //zer[k] == 3 - 1 = 2
+                if(zer[k] == size - j - 1)
                 {
                     tempv = 1;
                     vector<double> copy = domain; //skips the root at the current i
                     copy.erase(copy.begin() + i);
-                    //copy is correct
                     for(int l = 0; l < bin[k].size(); l++)
                     {
                         if(bin[k][l] == 1)
@@ -128,7 +126,7 @@ void findPolynomial(vector<double> domain, vector<double> codomain, int size)
     }
 }
 
-//bitmasking 
+//generate combinations 
 vector<vector<int>> binary(int size)
 {
     vector<vector<int>> ans;
