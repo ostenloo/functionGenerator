@@ -11,4 +11,4 @@ Example:
 
 5 6 7 8 
 
-Note: Your will need to run at least c++11, otherwise, the ```for(auto a : domain)``` will throw a warning. Also the ```vector<vector<int> > ``` will need a space between the ```> >```. 
+Note: Your IDE will need to run at least c++11, otherwise, the ```for(auto a : domain)``` will throw a warning. Also the ```vector<vector<int> > ``` will need a space between the ```> >```. 
